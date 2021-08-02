@@ -36,6 +36,9 @@ const NavWrapper = styled.nav`
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    h1 {
+      font-weight: bold;
+    }
   }
   .list {
     /* background: pink; */
