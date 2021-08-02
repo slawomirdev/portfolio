@@ -2,12 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+import Card from "../components/Card";
 
 const Home: React.FC = () => {
   return (
     <Wrapper>
       <Navbar />
       <Hero />
+      <Card />
     </Wrapper>
   );
 };

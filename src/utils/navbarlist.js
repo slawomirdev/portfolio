@@ -18,3 +18,21 @@ export const links = [
     active: false,
   },
 ];
+
+export const socials = [
+  {
+    id: 1,
+    text: "fb",
+    url: "/#",
+  },
+  {
+    id: 2,
+    text: "tw",
+    url: "/#",
+  },
+  {
+    id: 3,
+    text: "in",
+    url: "/#",
+  },
+];
