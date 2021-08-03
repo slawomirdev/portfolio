@@ -2,6 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import SvgSign from "./SvgSign";
 import { additionals } from "../utils/navbarlist";
+import { motion } from "framer-motion";
+
+const variants = {
+  visible: { opacity: 1, y: 0, transition: { duration: 2 } },
+  hidden: { opacity: 0, y: 200 },
+};
 
 const Hero: React.FC = () => {
   return (
@@ -10,7 +16,7 @@ const Hero: React.FC = () => {
         <SignWrapper>
           <SvgSign />
         </SignWrapper>
-        <Intro>
+        <Intro initial="hidden" animate="visible" variants={variants}>
           <h1>Breathing in the aroma of creativity.</h1>
           <p>
             Ham followed now ecstatic use speaking exercise may repeated.
@@ -112,7 +118,7 @@ const SignWrapper = styled.div`
   }
 `;
 
-const Intro = styled.div`
+const Intro = styled(motion.div)`
   height: 45vh;
   width: 45vw;
   color: #ffffff;

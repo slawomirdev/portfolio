@@ -2,23 +2,40 @@ import React from "react";
 import styled from "styled-components";
 import { socials } from "../utils/navbarlist";
 import emoji from "../assets/emoji.png";
+import { motion } from "framer-motion";
+
+const variants = {
+  visible: { opacity: 1, y: 0, transition: { duration: 2 } },
+  hidden: { opacity: 0, y: -200 },
+};
+
+const variantsImg = {
+  visible: { scale: 1, transition: { duration: 2 } },
+  hidden: { scale: 0.3 },
+};
 
 const Card: React.FC = () => {
   return (
-    <CardWrapper>
+    <CardWrapper initial="hidden" animate="visible" variants={variants}>
       <ul className="list">
         {socials.map(({ id, text, url }) => {
           return <li key={id}>{text}</li>;
         })}
       </ul>
       <div className="emojiWrapper">
-        <img src={emoji} alt="emoji" />
+        <motion.img
+          initial="hidden"
+          animate="visible"
+          variants={variantsImg}
+          src={emoji}
+          alt="emoji"
+        />
       </div>
     </CardWrapper>
   );
 };
 
-const CardWrapper = styled.div`
+const CardWrapper = styled(motion.div)`
   position: absolute;
   left: 0;
   right: 0;
