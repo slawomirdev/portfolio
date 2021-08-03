@@ -52,6 +52,20 @@ const HeroWrapper = styled.div`
     align-items: center;
     padding-top: 5rem;
   }
+
+  @media only screen and (max-width: 1024px) {
+    width: 100vw;
+    align-self: normal;
+
+    .boxWrapper {
+      width: 100vw;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 3rem;
+    }
+  }
 `;
 
 const SideBar = styled.ul`
@@ -64,6 +78,10 @@ const SideBar = styled.ul`
   justify-content: space-around;
   align-items: center;
   list-style: none;
+
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
 
   li {
     font-size: 1rem;
@@ -116,6 +134,14 @@ const SignWrapper = styled.div`
       width: 18ch;
     }
   }
+
+  @media only screen and (max-width: 1024px) {
+    padding-left: 0rem;
+    justify-content: center;
+    width: 70vw;
+    height: 30vh;
+    padding: 0rem 1rem 0rem 1rem;
+  }
 `;
 
 const Intro = styled(motion.div)`
@@ -124,6 +150,16 @@ const Intro = styled(motion.div)`
   color: #ffffff;
   z-index: 4;
   padding: 1rem 6rem 1rem 6rem;
+
+  @media only screen and (max-width: 1024px) {
+    padding: 1rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+  }
 
   p {
     padding-top: 1rem;

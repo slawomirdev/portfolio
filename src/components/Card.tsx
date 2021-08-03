@@ -67,6 +67,13 @@ const CardWrapper = styled(motion.div)`
       padding: 1.5rem;
     }
   }
+
+  @media only screen and (max-width: 1024px) {
+    background: transparent;
+    .list {
+      display: none;
+    }
+  }
 `;
 
 export default Card;

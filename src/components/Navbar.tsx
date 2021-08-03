@@ -10,8 +10,16 @@ const Navbar: React.FC = () => {
         <h3>frontend developer</h3>
       </div>
       <ul className="list">
-        {links.map(({ id, text, url }) => {
-          return <li key={id}>{text}</li>;
+        {links.map(({ id, text, url, active }) => {
+          if (active === false) {
+            return (
+              <li key={id} className="notActive">
+                {text}
+              </li>
+            );
+          } else {
+            return <li key={id}>{text}</li>;
+          }
         })}
       </ul>
     </NavWrapper>
@@ -41,7 +49,6 @@ const NavWrapper = styled.nav`
     }
   }
   .list {
-    /* background: pink; */
     height: 20vh;
     width: 30vw;
     display: flex;
@@ -50,8 +57,22 @@ const NavWrapper = styled.nav`
     align-items: center;
     list-style: none;
 
+    .notActive {
+      color: grey;
+      cursor: default;
+    }
+
     li {
       padding: 1.5rem;
+      cursor: pointer;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    justify-content: center;
+
+    .list {
+      display: none;
     }
   }
 `;

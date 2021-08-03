@@ -28,6 +28,12 @@ const GlobalStyle = createGlobalStyle`
  h4{
      font-size: 0.5rem
  }
+
+ svg{
+     @media only screen and (max-width: 1024px) {
+    fill: #fff;
+  }
+ }
 `;
 
 export default GlobalStyle;
