@@ -27,6 +27,12 @@ const AboutWrapper = styled.div`
     display: flex;
     flex-direction: row;
   }
+
+  @media only screen and (max-width: 1024px) {
+    .section {
+      flex-direction: column;
+    }
+  }
 `;
 
 export default About;

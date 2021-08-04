@@ -7,13 +7,13 @@ import { motion } from "framer-motion";
 const variants = {
   visible: { opacity: 1, y: 0, transition: { duration: 2 } },
   hidden: { opacity: 0, y: -200 },
-  exit: { opacity: 0, y: -200, transition: { duration: 2 } },
+  exit: { opacity: 0, y: -200, transition: { duration: 0.5 } },
 };
 
 const variantsImg = {
   visible: { scale: 1, transition: { duration: 2 } },
   hidden: { scale: 0.3 },
-  exit: { scale: 0.1, transition: { duration: 2 } },
+  exit: { scale: 0.1, transition: { duration: 0.5 } },
 };
 
 const Card: React.FC = () => {

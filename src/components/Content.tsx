@@ -40,11 +40,15 @@ const Content: React.FC = () => {
 
 const Wrapper = styled.div`
   height: 80vh;
-  width: 55vw;
+  width: 50vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* background: red; */
+  @media only screen and (max-width: 1024px) {
+    width: 100vw;
+    height: auto;
+  }
 `;
 
 const Info = styled.div`
@@ -55,6 +59,11 @@ const Info = styled.div`
   p {
     padding: 0.5rem;
     letter-spacing: 0.1rem;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    width: 90vw;
+    height: auto;
   }
 `;
 

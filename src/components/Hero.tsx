@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
     <HeroWrapper
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
-      exit={{ opacity: 0, y: 400, transition: { duration: 2 } }}
+      exit={{ opacity: 0, y: 400, transition: { duration: 0.5 } }}
     >
       <div className="boxWrapper">
         <SignWrapper>
