@@ -69,12 +69,12 @@ const NavWrapper = styled.nav`
 
     li {
       padding: 1.5rem;
-      cursor: pointer;
     }
 
     a {
       text-decoration: none;
       color: black;
+      cursor: pointer;
     }
   }
 

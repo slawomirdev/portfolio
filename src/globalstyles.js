@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
 
  body{
      font-family: 'Lato', sans-serif;
-     overflow-y: hidden;
+     overflow-x: hidden;
  }
 
 
@@ -30,11 +30,11 @@ const GlobalStyle = createGlobalStyle`
      font-size: 0.5rem
  }
 
- svg{
-     @media only screen and (max-width: 1024px) {
-    fill: #fff;
-  }
+ p{
+     font-size:1.2rem;
  }
+
+
 `;
 
 export default GlobalStyle;
