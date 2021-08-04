@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import CardAbout from "./CardAbout";
 import Description from "./Description";
 
 const Content: React.FC = () => {
   return (
     <Wrapper>
       <Description />
+      <CardAbout />
       <Info>
         <p>
           Hello! I'm Sławomir Mendyka, from Poland, student and great developer.
@@ -38,7 +40,7 @@ const Content: React.FC = () => {
 
 const Wrapper = styled.div`
   height: 80vh;
-  width: 60vw;
+  width: 55vw;
   display: flex;
   flex-direction: column;
   align-items: center;

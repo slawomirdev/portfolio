@@ -28,12 +28,14 @@ const Description: React.FC = () => {
 };
 
 const Wrapper = styled.div`
-  height: 10rem;
+  height: 12rem;
   width: 15rem;
   /* background: red; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 3;
+  padding: 1rem;
 `;
 
 const Box = styled.div`
