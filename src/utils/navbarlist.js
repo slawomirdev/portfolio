@@ -1,21 +1,21 @@
 export const links = [
   {
     id: 1,
+    text: "home",
+    url: "/",
+    active: true,
+  },
+  {
+    id: 2,
     text: "about",
     url: "/about",
     active: true,
   },
   {
-    id: 2,
+    id: 3,
     text: "latest work",
     url: "/work",
     active: true,
-  },
-  {
-    id: 3,
-    text: "blog",
-    url: "/blog",
-    active: false,
   },
 ];
 
@@ -40,13 +40,13 @@ export const socials = [
 export const additionals = [
   {
     id: 1,
-    text: "about",
+    text: "github",
     url: "/about",
     active: true,
   },
   {
     id: 2,
-    text: "latest work",
+    text: "Say hello",
     url: "/work",
     active: true,
   },

@@ -1,14 +1,31 @@
 import React from "react";
+import { Switch, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import GlobalStyle from "./globalstyles";
 import Home from "./sites/Home";
+import About from "./sites/About";
+import Error from "./sites/Error";
 
 const App: React.FC = () => {
+  //Animacja przejścia między stronami
+  const location = useLocation();
+
   return (
     <div className="App">
-      <>
-        <GlobalStyle />
-        <Home />
-      </>
+      <GlobalStyle />
+      <AnimatePresence>
+        <Switch location={location} key={location.pathname}>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="*">
+            <Error />
+          </Route>
+        </Switch>
+      </AnimatePresence>
     </div>
   );
 };

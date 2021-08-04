@@ -11,7 +11,11 @@ const variants = {
 
 const Hero: React.FC = () => {
   return (
-    <HeroWrapper>
+    <HeroWrapper
+      initial={{ opacity: 1 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, y: 400, transition: { duration: 2 } }}
+    >
       <div className="boxWrapper">
         <SignWrapper>
           <SvgSign />
@@ -34,7 +38,7 @@ const Hero: React.FC = () => {
   );
 };
 
-const HeroWrapper = styled.div`
+const HeroWrapper = styled(motion.div)`
   height: 80vh;
   width: 90vw;
   background: #0a192f;

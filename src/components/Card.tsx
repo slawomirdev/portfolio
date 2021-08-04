@@ -7,16 +7,23 @@ import { motion } from "framer-motion";
 const variants = {
   visible: { opacity: 1, y: 0, transition: { duration: 2 } },
   hidden: { opacity: 0, y: -200 },
+  exit: { opacity: 0, y: -200, transition: { duration: 2 } },
 };
 
 const variantsImg = {
   visible: { scale: 1, transition: { duration: 2 } },
   hidden: { scale: 0.3 },
+  exit: { scale: 0.1, transition: { duration: 2 } },
 };
 
 const Card: React.FC = () => {
   return (
-    <CardWrapper initial="hidden" animate="visible" variants={variants}>
+    <CardWrapper
+      initial="hidden"
+      animate="visible"
+      variants={variants}
+      exit="exit"
+    >
       <ul className="list">
         {socials.map(({ id, text, url }) => {
           return <li key={id}>{text}</li>;
@@ -26,6 +33,7 @@ const Card: React.FC = () => {
         <motion.img
           initial="hidden"
           animate="visible"
+          exit="exit"
           variants={variantsImg}
           src={emoji}
           alt="emoji"

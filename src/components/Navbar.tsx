@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { links } from "../utils/navbarlist";
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   return (
@@ -18,7 +19,11 @@ const Navbar: React.FC = () => {
               </li>
             );
           } else {
-            return <li key={id}>{text}</li>;
+            return (
+              <li key={id}>
+                <Link to={url}>{text}</Link>
+              </li>
+            );
           }
         })}
       </ul>
@@ -65,6 +70,11 @@ const NavWrapper = styled.nav`
     li {
       padding: 1.5rem;
       cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
     }
   }
 
