@@ -26,7 +26,13 @@ const Card: React.FC = () => {
     >
       <ul className="list">
         {socials.map(({ id, text, url }) => {
-          return <li key={id}>{text}</li>;
+          return (
+            <li key={id}>
+              <a href={url} target="_blank" rel="noreferrer">
+                {text}
+              </a>
+            </li>
+          );
         })}
       </ul>
       <div className="emojiWrapper">
@@ -73,6 +79,12 @@ const CardWrapper = styled(motion.div)`
 
     li {
       padding: 1.5rem;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      position: relative;
     }
   }
 

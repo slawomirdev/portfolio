@@ -62,6 +62,28 @@ const GlobalStyle = createGlobalStyle`
     background-color: #141c3a;
 }
 
+    .notActive {
+      color: grey;
+      cursor: default;
+    }
+
+    .email{
+        border: 2px solid #141c3a;
+        padding: 1rem 1rem;
+        border-radius: 0.5rem;
+        transition: 0.3s ease-out;
+
+        a:after{
+            height: 0px;
+        }
+    }
+
+
+    .email:hover{
+    background: #141c3a;
+    }
+
+
 
 `;
 

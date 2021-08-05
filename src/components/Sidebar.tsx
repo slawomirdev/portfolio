@@ -5,8 +5,27 @@ import styled from "styled-components";
 const Sidebar = () => {
   return (
     <Wrapper>
-      {additionals.map(({ id, text, url }) => {
-        return <li key={id}>{text}</li>;
+      {additionals.map(({ id, text, url, active }) => {
+        if (active === false) {
+          return (
+            <li key={id} className="notActive">
+              {text}
+            </li>
+          );
+        }
+        if (text === "Email me") {
+          return (
+            <li key={id} className="email">
+              <a href={url}>{text}</a>
+            </li>
+          );
+        } else {
+          return (
+            <li key={id}>
+              <a href={url}>{text}</a>
+            </li>
+          );
+        }
       })}
     </Wrapper>
   );
@@ -24,12 +43,28 @@ const Wrapper = styled.ul`
   list-style: none;
 
   @media only screen and (max-width: 1024px) {
-    display: none;
+    width: 100vw;
+    height: 10rem;
+    align-self: default;
   }
 
   li {
     font-size: 1rem;
     font-weight: bold;
+  }
+
+  a {
+    position: relative;
+    color: black;
+  }
+  a:after {
+    background: black;
+  }
+
+  .email:hover {
+    a {
+      color: white;
+    }
   }
 `;
 

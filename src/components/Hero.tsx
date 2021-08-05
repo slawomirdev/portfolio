@@ -58,6 +58,7 @@ const HeroWrapper = styled(motion.div)`
   @media only screen and (max-width: 1024px) {
     width: 100vw;
     align-self: normal;
+    height: auto;
 
     .boxWrapper {
       width: 100vw;
@@ -66,6 +67,7 @@ const HeroWrapper = styled(motion.div)`
       align-items: center;
       text-align: center;
       padding-top: 3rem;
+      height: auto;
     }
   }
 `;

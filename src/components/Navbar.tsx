@@ -62,11 +62,6 @@ const NavWrapper = styled.nav`
     align-items: center;
     list-style: none;
 
-    .notActive {
-      color: grey;
-      cursor: default;
-    }
-
     li {
       padding: 1.5rem;
     }

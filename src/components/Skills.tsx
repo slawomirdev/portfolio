@@ -1,23 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-
-import {
-  FaReact,
-  FaHtml5,
-  FaSass,
-  FaGitSquare,
-  FaNodeJs,
-} from "react-icons/fa";
-import {
-  SiJavascript,
-  SiTypescript,
-  SiStyledComponents,
-  SiMongodb,
-  SiMysql,
-  SiNetlify,
-  SiAdobexd,
-} from "react-icons/si";
+import Icons from "./Icons";
 
 const variants = {
   visible: { opacity: 1, y: 0, transition: { duration: 2 } },
@@ -31,18 +15,7 @@ const Skills: React.FC = () => {
       <div className="hero">
         <h1>By the way, these are some of the tools I'm currently using:</h1>
         <div className="tools">
-          <FaReact />
-          <SiJavascript />
-          <SiTypescript />
-          <FaHtml5 />
-          <FaSass />
-          <SiStyledComponents />
-          <FaGitSquare />
-          <SiMongodb />
-          <SiMysql />
-          <FaNodeJs />
-          <SiNetlify />
-          <SiAdobexd />
+          <Icons />
         </div>
       </div>
       <motion.div

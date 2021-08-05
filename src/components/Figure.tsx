@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 interface Props {
   img: string;
@@ -9,19 +10,27 @@ interface Props {
   name: string;
 }
 
+const variants = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 2 } },
+  hidden: { opacity: 0, scale: 0.3 },
+  exit: { opacity: 0, scale: 0.3, transition: { duration: 0.2 } },
+};
+
 const Figure: React.FC<Props> = ({ img, text, link, button, name }) => {
   return (
-    <Wrapper>
+    <Wrapper initial="hidden" animate="visible" variants={variants} exit="exit">
       <img src={img} alt={name} />
       <div className="overlay">
         <p>{text}</p>
-        <a href={link}>{button}</a>
+        <a href={link} target="_blank" rel="noreferrer">
+          {button}
+        </a>
       </div>
     </Wrapper>
   );
 };
 
-const Wrapper = styled.div`
+const Wrapper = styled(motion.div)`
   height: 17rem;
   width: 23rem;
   margin: 1rem 1rem;
@@ -53,16 +62,22 @@ const Wrapper = styled.div`
     justify-content: center;
 
     p {
-      padding: 1rem 1rem;
+      padding: 1.5rem;
       font-weight: bold;
+      font-size: 1.5rem;
     }
 
     a {
       text-decoration: none;
       color: #fff;
       border: 2px solid #7510f7;
-      border-radius: 12px;
+      border-radius: 1rem;
       padding: 0.5rem;
+      font-weight: bold;
+    }
+
+    a:hover {
+      background: #7510f7;
     }
   }
 

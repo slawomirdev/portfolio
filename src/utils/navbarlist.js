@@ -22,18 +22,18 @@ export const links = [
 export const socials = [
   {
     id: 1,
-    text: "fb",
-    url: "/#",
+    text: "ig",
+    url: "https://www.instagram.com/slawomir_mendyka/",
   },
   {
     id: 2,
     text: "tw",
-    url: "/#",
+    url: "https://twitter.com/HeySlawomir",
   },
   {
     id: 3,
     text: "in",
-    url: "/#",
+    url: "https://www.linkedin.com/in/sławomir-mendyka-659830212/",
   },
 ];
 
@@ -41,13 +41,13 @@ export const additionals = [
   {
     id: 1,
     text: "github",
-    url: "/about",
+    url: "https://github.com/thewilkupl",
     active: true,
   },
   {
     id: 2,
-    text: "Say hello",
-    url: "/work",
+    text: "Email me",
+    url: "mailto:mendyka.slawomir@gmail.com",
     active: true,
   },
   {
