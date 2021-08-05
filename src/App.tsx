@@ -5,6 +5,7 @@ import GlobalStyle from "./globalstyles";
 import Home from "./sites/Home";
 import About from "./sites/About";
 import Error from "./sites/Error";
+import Work from "./sites/Work";
 
 const App: React.FC = () => {
   //Animacja przejścia między stronami
@@ -20,6 +21,9 @@ const App: React.FC = () => {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/work">
+            <Work />
           </Route>
           <Route path="*">
             <Error />

@@ -1,7 +1,25 @@
 import React from "react";
+import Navbar from "../components/Navbar";
+import styled from "styled-components";
+import Projects from "../components/Projects";
+// import Sidebar from "../components/Sidebar";
 
 const Work: React.FC = () => {
-  return <div></div>;
+  return (
+    <Wrapper>
+      <Navbar />
+      <Projects />
+      {/* <Sidebar /> */}
+    </Wrapper>
+  );
 };
+
+const Wrapper = styled.div`
+  height: 100vh;
+  width: 100vw;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+`;
 
 export default Work;

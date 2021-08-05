@@ -38,6 +38,30 @@ const GlobalStyle = createGlobalStyle`
      text-decoration: none;
  }
 
+  a:after {
+    content: "";
+    position: absolute;
+    background: #ffffff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+  }
+
+  a:hover:after {
+    width: 100%;
+  }
+
+  //scroll
+::-webkit-scrollbar {
+    width: 6px;
+    border-left: 1px solid #E6ECF8;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #141c3a;
+}
+
 
 `;
 

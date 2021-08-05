@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import bootcampCert from "../assets/bootcampcert.jpg";
-import typescriptCert from "../assets/typescriptcert.jpg";
 import { motion } from "framer-motion";
 
 import {
@@ -17,6 +15,8 @@ import {
   SiStyledComponents,
   SiMongodb,
   SiMysql,
+  SiNetlify,
+  SiAdobexd,
 } from "react-icons/si";
 
 const variants = {
@@ -29,7 +29,7 @@ const Skills: React.FC = () => {
   return (
     <Wrapper>
       <div className="hero">
-        <h1>Mostly used tools</h1>
+        <h1>By the way, these are some of the tools I'm currently using:</h1>
         <div className="tools">
           <FaReact />
           <SiJavascript />
@@ -41,6 +41,8 @@ const Skills: React.FC = () => {
           <SiMongodb />
           <SiMysql />
           <FaNodeJs />
+          <SiNetlify />
+          <SiAdobexd />
         </div>
       </div>
       <motion.div
@@ -50,7 +52,7 @@ const Skills: React.FC = () => {
         variants={variants}
         exit="exit"
       >
-        <h2>Here are some certificates from udemy or similar platforms:</h2>
+        <h2>Certificates from udemy or similar platforms:</h2>
         <ul className="sectionUp">
           <li>
             <a href="https://www.udemy.com/certificate/UC-bd508528-4dba-4027-93ae-8d4641eb3204/">
@@ -93,6 +95,10 @@ const Wrapper = styled.div`
     text-align: center;
     padding: 1rem 0rem;
 
+    h1 {
+      padding: 0rem 3rem;
+    }
+
     @media only screen and (max-width: 1024px) {
       width: 100vw;
       height: auto;
@@ -100,11 +106,15 @@ const Wrapper = styled.div`
 
     .tools {
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       flex-wrap: wrap;
-      width: 50vw;
-      height: 25vh;
+      width: 30vw;
+      height: auto;
+
+      @media only screen and (max-width: 1024px) {
+        width: 80vw;
+      }
 
       svg {
         height: 4rem;
@@ -156,6 +166,7 @@ const Wrapper = styled.div`
 
     a {
       color: white;
+      position: relative;
     }
   }
 `;

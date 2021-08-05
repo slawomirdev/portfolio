@@ -75,6 +75,11 @@ const NavWrapper = styled.nav`
       text-decoration: none;
       color: black;
       cursor: pointer;
+      position: relative;
+    }
+
+    a:after {
+      background: black;
     }
   }
 

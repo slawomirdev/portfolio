@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import SvgSign from "./SvgSign";
-import { additionals } from "../utils/navbarlist";
+//components
+import Sidebar from "./Sidebar";
+
 import { motion } from "framer-motion";
 
 const variants = {
@@ -29,11 +31,7 @@ const Hero: React.FC = () => {
           <button>Learn more</button>
         </Intro>
       </div>
-      <SideBar>
-        {additionals.map(({ id, text, url }) => {
-          return <li key={id}>{text}</li>;
-        })}
-      </SideBar>
+      <Sidebar />
     </HeroWrapper>
   );
 };
@@ -69,27 +67,6 @@ const HeroWrapper = styled(motion.div)`
       text-align: center;
       padding-top: 3rem;
     }
-  }
-`;
-
-const SideBar = styled.ul`
-  display: flex;
-  align-self: flex-end;
-  width: 60vw;
-  background: #ffffff;
-  height: 20vh;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-
-  @media only screen and (max-width: 1024px) {
-    display: none;
-  }
-
-  li {
-    font-size: 1rem;
-    font-weight: bold;
   }
 `;
 
