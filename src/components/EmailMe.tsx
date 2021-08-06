@@ -19,6 +19,7 @@ const Wrapper = styled.a`
   border: 1px solid #fff;
   width: max-content;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   font-size: 1.2rem;
   display: flex;
   justify-content: center;

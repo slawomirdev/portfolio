@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import Icons from "./Icons";
+import EmailMe from "./EmailMe";
 
 const variants = {
   visible: { opacity: 1, y: 0, transition: { duration: 2 } },
@@ -43,6 +44,7 @@ const Skills: React.FC = () => {
             </a>
           </li>
         </ul>
+        <EmailMe />
       </motion.div>
     </Wrapper>
   );
@@ -116,6 +118,7 @@ const Wrapper = styled.div`
 
     @media only screen and (max-width: 1024px) {
       width: 100vw;
+      height: auto;
     }
 
     img {

@@ -89,10 +89,11 @@ const CardWrapper = styled(motion.div)`
   }
 
   @media only screen and (max-width: 1024px) {
-    background: transparent;
+    /* background: transparent;
     .list {
       display: none;
-    }
+    } */
+    display: none;
   }
 `;
 

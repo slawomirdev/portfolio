@@ -68,7 +68,13 @@ const GlobalStyle = createGlobalStyle`
     }
 
 
+ .navbarActive {
+      height: 100vh;
+    }
 
+    .emojiNotActive{
+        opacity: 0;
+    }
 
 
 `;
