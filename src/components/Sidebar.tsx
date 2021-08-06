@@ -12,13 +12,6 @@ const Sidebar = () => {
               {text}
             </li>
           );
-        }
-        if (text === "Email me") {
-          return (
-            <li key={id} className="email">
-              <a href={url}>{text}</a>
-            </li>
-          );
         } else {
           return (
             <li key={id}>

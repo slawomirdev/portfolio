@@ -22,8 +22,8 @@ export const links = [
 export const socials = [
   {
     id: 1,
-    text: "ig",
-    url: "https://www.instagram.com/slawomir_mendyka/",
+    text: "fb",
+    url: "https://www.facebook.com/profile.php?id=100005164180247",
   },
   {
     id: 2,
@@ -46,8 +46,8 @@ export const additionals = [
   },
   {
     id: 2,
-    text: "Email me",
-    url: "mailto:mendyka.slawomir@gmail.com",
+    text: "curriculum",
+    url: "https://nofluffjobs.com/profile/WEDUAK60",
     active: true,
   },
   {
