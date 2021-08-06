@@ -53,12 +53,6 @@ const Wrapper = styled.ul`
   a:after {
     background: black;
   }
-
-  .email:hover {
-    a {
-      color: white;
-    }
-  }
 `;
 
 export default Sidebar;

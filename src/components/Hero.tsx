@@ -2,7 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import SvgSign from "./SvgSign";
 //components
+
 import Sidebar from "./Sidebar";
+import EmailMe from "./EmailMe";
+//Icons
 
 import { motion } from "framer-motion";
 
@@ -28,7 +31,7 @@ const Hero: React.FC = () => {
             Ham followed now ecstatic use speaking exercise may repeated.
             Himself he evident oh greatly my on inhabit general concern.
           </p>
-          <button>Learn more</button>
+          <EmailMe />
         </Intro>
       </div>
       <Sidebar />
@@ -133,6 +136,12 @@ const Intro = styled(motion.div)`
   color: #ffffff;
   z-index: 4;
   padding: 1rem 6rem 1rem 6rem;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    padding-top: 1rem;
+  }
 
   @media only screen and (max-width: 1024px) {
     padding: 1rem 1rem 1rem 1rem;
@@ -142,36 +151,6 @@ const Intro = styled(motion.div)`
     align-items: center;
     text-align: center;
     width: 100vw;
-  }
-
-  p {
-    padding-top: 1rem;
-  }
-
-  button {
-    border: none;
-    background: transparent;
-    padding-top: 1rem;
-    font-size: 1rem;
-    color: #ffffff;
-    font-weight: bold;
-    position: relative;
-    cursor: pointer;
-  }
-
-  button:after {
-    content: "";
-    position: absolute;
-    background: #ffffff;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s;
-  }
-
-  button:hover:after {
-    width: 100%;
   }
 `;
 
