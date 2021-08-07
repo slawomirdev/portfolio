@@ -10,28 +10,25 @@ const Content: React.FC = () => {
       <CardAbout />
       <Info>
         <p>
-          Hello! I'm Sławomir Mendyka, from Poland, student and great developer.
+          Hey there! Let me introduce myself again, my name is Sławomir Mendyka,
+          and I am a Frontend developer. I am a twenty years old student at WSB
+          University in Poznań, currently studying Computer Science.
         </p>
         <p>
-          I am a creative, time punctual, dedicated, goal-oriented individual
-          with decent moral Values and Ethicates along with a high-energy level,
-          honed communication skills, strong organizational skills, and
-          meticulous attention to detail.
+          I am a creative and time punctual. My go-to programming language is
+          JavaScript. When it comes to programming I enjoy the challenging stuff
+          and always try to find the right solution for a problem.
         </p>
         <p>
-          I live in a small town between Poznań and Wrocław but I love traveling
-          and I want to take opportunities and travel around the world. That's
-          why I'm grateful for remote work in this field. I always strive to
-          develop myself and the people around me. That's why in Vocational
-          Technical High School we created this little team to participate in
-          competitions. It was a great opportunity to learn some teamwork and
-          work on a little bit more professional projects.
+          I live in a small town between Poznań and Wrocław. Programming became
+          my passion at Vocational Technical High School. Together with a team
+          from school we took part in programming competitions. It was a great
+          experience to work in a group and learn from others.
         </p>
         <p>
-          Apart from this, I'm constantly developing myself taking courses on
-          Udemy or on similar platforms that's help to understand new
-          technologies and become a better React developer. If you want to see
-          my certificates go to the certificates tab in the navigation.
+          Apart from this, I spent most of my time to build my web development
+          skill through self learning from online resources such as freeCodeCamp
+          or Udemy.
         </p>
       </Info>
     </Wrapper>
