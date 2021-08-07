@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { HiArrowCircleRight } from "react-icons/hi";
 import { avatars } from "../utils/emojiArray";
+import { motion } from "framer-motion";
+
+const variants = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+  hidden: { opacity: 0, scale: 0.1 },
+  exit: { opacity: 0, scale: 0.1, transition: { duration: 0.5 } },
+};
 
 const Description: React.FC = () => {
   const [avatar, setAvatar] = useState(avatars[0]);
@@ -19,7 +26,14 @@ const Description: React.FC = () => {
     <Wrapper>
       <Box>
         <Avatar>
-          <img src={avatar.img} alt="emojiHi" />
+          <motion.img
+            src={avatar.img}
+            alt="emojiHi"
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+            exit="exit"
+          />
         </Avatar>
         <HiArrowCircleRight onClick={avatarHandler} />
       </Box>

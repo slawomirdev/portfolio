@@ -26,7 +26,7 @@ const Skills: React.FC = () => {
         variants={variants}
         exit="exit"
       >
-        <h2>Certificates from udemy or similar platforms:</h2>
+        <h2>Let's Build Something Together</h2>
         <ul className="sectionUp">
           <li>
             <a href="https://www.udemy.com/certificate/UC-bd508528-4dba-4027-93ae-8d4641eb3204/">
