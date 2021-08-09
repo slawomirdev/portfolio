@@ -76,6 +76,12 @@ const GlobalStyle = createGlobalStyle`
         opacity: 0;
     }
 
+.underline{
+    height: 2px;
+    background-color: #fff;
+    width: 300px;
+}
+
 
 `;
 

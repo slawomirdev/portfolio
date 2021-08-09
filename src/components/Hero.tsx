@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import SvgSign from "./SvgSign";
+import { Link } from "react-router-dom";
 //components
 
 import Sidebar from "./Sidebar";
@@ -26,10 +27,11 @@ const Hero: React.FC = () => {
           <SvgSign />
         </SignWrapper>
         <Intro initial="hidden" animate="visible" variants={variants}>
-          <h1>Breathing in the aroma of creativity.</h1>
+          <h1>Creativity takes courage.</h1>
           <p>
-            Ham followed now ecstatic use speaking exercise may repeated.
-            Himself he evident oh greatly my on inhabit general concern.
+            I'm a student and developer from Poland. I have profound interest in
+            frontend development, computer science and everything in between.
+            <Link to="/about"> Read more</Link>
           </p>
           <EmailMe />
         </Intro>
@@ -141,6 +143,17 @@ const Intro = styled(motion.div)`
 
   p {
     padding-top: 1rem;
+
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    a:after {
+      width: 0;
+    }
   }
 
   @media only screen and (max-width: 1024px) {

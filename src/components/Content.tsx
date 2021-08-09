@@ -42,6 +42,12 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   /* background: red; */
+
+  @media only screen and (max-width: 1600px) {
+    width: 100vw;
+    height: auto;
+  }
+
   @media only screen and (max-width: 1024px) {
     width: 100vw;
     height: auto;
@@ -56,6 +62,11 @@ const Info = styled.div`
   p {
     padding: 0.5rem;
     letter-spacing: 0.1rem;
+  }
+
+  @media only screen and (max-width: 1600px) {
+    width: 90vw;
+    height: auto;
   }
 
   @media only screen and (max-width: 1024px) {

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import Icons from "./Icons";
 import EmailMe from "./EmailMe";
+import emojiComputer from "../assets/emojiComputer.png";
 
 const variants = {
   visible: { opacity: 1, y: 0, transition: { duration: 2 } },
@@ -14,7 +15,7 @@ const Skills: React.FC = () => {
   return (
     <Wrapper>
       <div className="hero">
-        <h1>By the way, these are some of the tools I'm currently using:</h1>
+        <h1>Here are some technologies I have been working with:</h1>
         <div className="tools">
           <Icons />
         </div>
@@ -26,24 +27,17 @@ const Skills: React.FC = () => {
         variants={variants}
         exit="exit"
       >
-        <h2>Let's Build Something Together</h2>
-        <ul className="sectionUp">
-          <li>
-            <a href="https://www.udemy.com/certificate/UC-bd508528-4dba-4027-93ae-8d4641eb3204/">
-              The Complete 2021 Web Development Bootcamp
-            </a>
-          </li>
-          <li>
-            <a href="https://www.udemy.com/certificate/UC-a74600ca-7e0d-4c41-a133-826138028c4d/">
-              Understanding TypeScript - 2021 Edition
-            </a>
-          </li>
-          <li>
-            <a href="https://www.udemy.com/certificate/UC-adcbfafe-825c-4282-a46d-8236901ec357/">
-              React Tutorial and Projects Course
-            </a>
-          </li>
-        </ul>
+        <h1>Let's Build Something Together</h1>
+
+        <div className="sectionUp">
+          <p>
+            Feel free to reach out if you're looking for a developer, have a
+            question, or just want to connect.
+          </p>
+          <p>I'm currently looking for an internship.</p>
+          <img src={emojiComputer} alt="me on computer" />
+        </div>
+        <div className="underline"></div>
         <EmailMe />
       </motion.div>
     </Wrapper>
@@ -55,6 +49,12 @@ const Wrapper = styled.div`
   width: 50vw;
   display: flex;
   flex-direction: column;
+
+  @media only screen and (max-width: 1600px) {
+    width: 100vw;
+    height: auto;
+  }
+
   @media only screen and (max-width: 1024px) {
     width: 100vw;
     height: auto;
@@ -74,6 +74,12 @@ const Wrapper = styled.div`
       padding: 0rem 3rem;
     }
 
+    @media only screen and (max-width: 1600px) {
+      width: 100vw;
+      height: auto;
+      padding: 3rem 0rem;
+    }
+
     @media only screen and (max-width: 1024px) {
       width: 100vw;
       height: auto;
@@ -86,6 +92,11 @@ const Wrapper = styled.div`
       flex-wrap: wrap;
       width: 30vw;
       height: auto;
+
+      @media only screen and (max-width: 1600px) {
+        width: 80vw;
+        height: auto;
+      }
 
       @media only screen and (max-width: 1024px) {
         width: 80vw;
@@ -112,8 +123,13 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
 
-    h2 {
+    h1 {
       padding: 1rem 1rem;
+    }
+
+    @media only screen and (max-width: 1600px) {
+      width: 100vw;
+      height: auto;
     }
 
     @media only screen and (max-width: 1024px) {
@@ -128,21 +144,20 @@ const Wrapper = styled.div`
     }
   }
 
-  ul {
+  .sectionUp {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    list-style: none;
-
-    li {
-      padding: 1rem 0rem;
-    }
+    width: 80%;
+    height: 60%;
 
     a {
       color: white;
       position: relative;
+    }
+
+    p {
+      padding: 1rem;
     }
   }
 `;

@@ -22,10 +22,13 @@ const AboutWrapper = styled.div`
   background: #fff;
 
   .section {
-    height: 80vh;
+    height: auto;
     width: 100vw;
     display: flex;
     flex-direction: row;
+    @media only screen and (max-width: 1600px) {
+      flex-direction: column;
+    }
   }
 
   @media only screen and (max-width: 1024px) {

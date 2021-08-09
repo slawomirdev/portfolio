@@ -12,8 +12,10 @@ const Navbar: React.FC = () => {
   return (
     <NavWrapper className={`${menuActive ? "navbarActive" : null}`}>
       <div className="logo">
-        <h1>mendyka.</h1>
-        <h3>frontend developer</h3>
+        <Link to="/">
+          <h1>mendyka.</h1>
+          <h3>frontend developer</h3>
+        </Link>
         {menuActive ? (
           <BiX className="lowRes" onClick={() => setMenuActive(false)} />
         ) : (
@@ -73,6 +75,15 @@ const NavWrapper = styled.nav`
     align-items: center;
     h1 {
       font-weight: bold;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:after {
+      width: 0;
     }
   }
   .list {

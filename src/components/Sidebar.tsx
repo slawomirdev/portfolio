@@ -15,7 +15,9 @@ const Sidebar = () => {
         } else {
           return (
             <li key={id}>
-              <a href={url}>{text}</a>
+              <a href={url} target="_blank" rel="noreferrer">
+                {text}
+              </a>
             </li>
           );
         }
