@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import Icons from "./Icons";
 import EmailMe from "./EmailMe";
-import emojiComputer from "../assets/emojiComputer.png";
+import email from "../assets/email.png";
 
 const variants = {
   visible: { opacity: 1, y: 0, transition: { duration: 2 } },
@@ -15,7 +15,7 @@ const Skills: React.FC = () => {
   return (
     <Wrapper>
       <div className="hero">
-        <h1>Here are some technologies I have been working with:</h1>
+        <h2>Here are some technologies I have been working with:</h2>
         <div className="tools">
           <Icons />
         </div>
@@ -27,18 +27,19 @@ const Skills: React.FC = () => {
         variants={variants}
         exit="exit"
       >
-        <h1>Let's Build Something Together</h1>
-
         <div className="sectionUp">
+          <h1>Get in touch.</h1>
           <p>
             Feel free to reach out if you're looking for a developer, have a
             question, or just want to connect.
           </p>
-          <p>I'm currently looking for an internship.</p>
-          <img src={emojiComputer} alt="me on computer" />
+
+          <div className="underline"></div>
+          <EmailMe />
         </div>
-        <div className="underline"></div>
-        <EmailMe />
+        <div className="sectionDown">
+          <img src={email} alt="email img" />
+        </div>
       </motion.div>
     </Wrapper>
   );
@@ -70,7 +71,7 @@ const Wrapper = styled.div`
     text-align: center;
     padding: 1rem 0rem;
 
-    h1 {
+    h2 {
       padding: 0rem 3rem;
     }
 
@@ -120,7 +121,7 @@ const Wrapper = styled.div`
     background: #233554;
     color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 
     h1 {
@@ -130,16 +131,18 @@ const Wrapper = styled.div`
     @media only screen and (max-width: 1600px) {
       width: 100vw;
       height: auto;
+      flex-direction: column-reverse;
     }
 
     @media only screen and (max-width: 1024px) {
       width: 100vw;
       height: auto;
+      flex-direction: column-reverse;
     }
 
     img {
-      height: 10rem;
-      width: 15rem;
+      height: 25rem;
+      width: 30rem;
       object-fit: contain;
     }
   }
@@ -148,17 +151,34 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    height: 60%;
+    width: 25vw;
+    height: 50vh;
+    text-align: center;
+    justify-content: center;
 
-    a {
-      color: white;
-      position: relative;
+    @media only screen and (max-width: 1600px) {
+      width: 90vw;
+      height: auto;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      width: 90vw;
+      height: auto;
     }
 
     p {
-      padding: 1rem;
+      padding: 1rem 1.5rem;
     }
+  }
+
+  .sectionDown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    height: 50vh;
+    text-align: center;
+    justify-content: center;
   }
 `;
 

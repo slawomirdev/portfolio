@@ -18,12 +18,13 @@ const Wrapper = styled.a`
   font-weight: bold;
   border: 1px solid #fff;
   width: max-content;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   font-size: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
 
   svg {
     display: inline-block;

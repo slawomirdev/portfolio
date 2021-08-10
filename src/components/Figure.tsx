@@ -71,7 +71,7 @@ const Wrapper = styled(motion.div)`
       text-decoration: none;
       color: #fff;
       border: 2px solid #7510f7;
-      border-radius: 1rem;
+      border-radius: 5px;
       padding: 0.5rem;
       font-weight: bold;
     }
