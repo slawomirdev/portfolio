@@ -26,7 +26,7 @@ const AboutWrapper = styled.div`
     width: 100vw;
     display: flex;
     flex-direction: row;
-    @media only screen and (max-width: 1600px) {
+    @media only screen and (max-width: 1440px) {
       flex-direction: column;
     }
   }

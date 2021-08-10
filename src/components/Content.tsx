@@ -43,7 +43,7 @@ const Wrapper = styled.div`
   align-items: center;
   /* background: red; */
 
-  @media only screen and (max-width: 1600px) {
+  @media only screen and (max-width: 1440px) {
     width: 100vw;
     height: auto;
   }
@@ -64,7 +64,7 @@ const Info = styled.div`
     letter-spacing: 0.1rem;
   }
 
-  @media only screen and (max-width: 1600px) {
+  @media only screen and (max-width: 1440px) {
     width: 90vw;
     height: auto;
   }

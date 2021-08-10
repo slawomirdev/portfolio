@@ -51,7 +51,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media only screen and (max-width: 1600px) {
+  @media only screen and (max-width: 1440px) {
     width: 100vw;
     height: auto;
   }
@@ -75,7 +75,7 @@ const Wrapper = styled.div`
       padding: 0rem 3rem;
     }
 
-    @media only screen and (max-width: 1600px) {
+    @media only screen and (max-width: 1440px) {
       width: 100vw;
       height: auto;
       padding: 3rem 0rem;
@@ -94,7 +94,7 @@ const Wrapper = styled.div`
       width: 30vw;
       height: auto;
 
-      @media only screen and (max-width: 1600px) {
+      @media only screen and (max-width: 1440px) {
         width: 80vw;
         height: auto;
       }
@@ -128,7 +128,7 @@ const Wrapper = styled.div`
       padding: 1rem 1rem;
     }
 
-    @media only screen and (max-width: 1600px) {
+    @media only screen and (max-width: 1440px) {
       width: 100vw;
       height: auto;
       flex-direction: column-reverse;
@@ -156,7 +156,7 @@ const Wrapper = styled.div`
     text-align: center;
     justify-content: center;
 
-    @media only screen and (max-width: 1600px) {
+    @media only screen and (max-width: 1440px) {
       width: 90vw;
       height: auto;
     }
@@ -167,7 +167,7 @@ const Wrapper = styled.div`
     }
 
     p {
-      padding: 1rem 1.5rem;
+      padding: 1.5rem 0rem;
     }
   }
 

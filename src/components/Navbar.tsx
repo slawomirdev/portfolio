@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
     <NavWrapper className={`${menuActive ? "navbarActive" : null}`}>
       <div className="logo">
         <Link to="/">
-          <h1>mendyka.</h1>
+          <h1>slawomir.</h1>
           <h3>frontend developer</h3>
         </Link>
         {menuActive ? (
