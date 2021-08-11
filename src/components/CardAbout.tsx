@@ -29,6 +29,10 @@ const CardWrapper = styled(motion.div)`
   background: #0a192f;
   color: #fff;
   height: 10rem;
+
+  @media only screen and (max-width: 1440px) {
+    display: none;
+  }
 `;
 
 export default CardAbout;
