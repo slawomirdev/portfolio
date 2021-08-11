@@ -6,9 +6,9 @@ import EmailMe from "./EmailMe";
 import email from "../assets/email.png";
 
 const variants = {
-  visible: { opacity: 1, y: 0, transition: { duration: 2 } },
-  hidden: { opacity: 0, y: 400 },
-  exit: { opacity: 0, y: 400, transition: { duration: 0.5 } },
+  visible: { opacity: 1, x: 0, transition: { duration: 2 } },
+  hidden: { opacity: 0, x: 400 },
+  exit: { opacity: 0, x: 400, transition: { duration: 0.5 } },
 };
 
 const Skills: React.FC = () => {
