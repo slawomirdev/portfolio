@@ -20,6 +20,10 @@ const Wrapper = styled.div`
   background: #ffffff;
   display: flex;
   flex-direction: column;
+
+  @media only screen and (max-width: 1024px) {
+    height: auto;
+  }
 `;
 
 export default Home;
