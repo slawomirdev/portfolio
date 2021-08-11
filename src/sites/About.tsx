@@ -22,6 +22,10 @@ const AboutWrapper = styled.div`
   background: #fff;
   overflow-x: hidden;
 
+  @media only screen and (max-width: 1024px) {
+    height: auto;
+  }
+
   .section {
     height: auto;
     width: 100vw;
