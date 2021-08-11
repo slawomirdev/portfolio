@@ -57,9 +57,9 @@ const NavWrapper = styled.nav`
   position: relative;
   transition: all 0.5s ease-out;
 
-  .navbarActive {
-    height: 100vh;
-  }
+  /* .navbarActive {
+    height: 50rem;
+  } */
 
   .lowRes {
     display: none;
