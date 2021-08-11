@@ -41,6 +41,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   /* background: red; */
 
   @media only screen and (max-width: 1440px) {
