@@ -23,7 +23,7 @@ const AboutWrapper = styled.div`
   overflow-x: hidden;
 
   @media only screen and (max-width: 1024px) {
-    height: auto;
+    height: 100%;
   }
 
   .section {
