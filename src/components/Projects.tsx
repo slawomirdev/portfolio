@@ -30,6 +30,10 @@ const Wrapper = styled.div`
     padding: 1rem;
   }
 
+  p {
+    padding: 0rem 1rem;
+  }
+
   .container {
     width: 90vw;
     height: auto;

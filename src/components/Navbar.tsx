@@ -123,7 +123,7 @@ const NavWrapper = styled.nav`
     .mobileMenu {
       display: flex;
       flex-direction: column;
-      height: 80vh;
+      height: 70vh;
       width: 80vw;
       justify-content: space-around;
       font-size: 3rem;

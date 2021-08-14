@@ -71,7 +71,7 @@ const HeroWrapper = styled(motion.div)`
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding-top: 3rem;
+      padding-top: 1.5rem;
       height: auto;
     }
   }
@@ -102,6 +102,19 @@ const SignWrapper = styled.div`
     width: 70vw;
     height: 30vh;
     padding: 0rem 1rem 0rem 1rem;
+  }
+
+  @media only screen and (max-width: 1024px) and (orientation: landscape) {
+    padding-left: 0rem;
+    justify-content: center;
+    width: 90vw;
+    height: auto;
+    padding: 1rem;
+
+    svg {
+      height: 15rem;
+      width: 20rem;
+    }
   }
 `;
 

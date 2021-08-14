@@ -69,7 +69,7 @@ const GlobalStyle = createGlobalStyle`
 
 
  .navbarActive {
-      height: 100vh !important;
+      height: 95vh !important;
     }
 
     .emojiNotActive{
@@ -81,6 +81,8 @@ const GlobalStyle = createGlobalStyle`
     background-color: #fff;
     width: 300px;
 }
+
+
 
 
 `;

@@ -166,6 +166,10 @@ const Wrapper = styled.div`
       height: auto;
     }
 
+    @media only screen and (max-width: 1024px) and (orientation: landscape) {
+      padding-top: 3rem;
+    }
+
     p {
       padding: 1.5rem 0rem;
     }
