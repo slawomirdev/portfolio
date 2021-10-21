@@ -3,7 +3,10 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 interface Props {
-  img: string;
+  img: {
+    url: string;
+    alt: string;
+  };
   text: string;
   link: string;
   button: string;
@@ -19,7 +22,7 @@ const variants = {
 const Figure: React.FC<Props> = ({ img, text, link, button, name }) => {
   return (
     <Wrapper initial="hidden" animate="visible" variants={variants} exit="exit">
-      <img src={img} alt={name} />
+      <img src={img.url} alt={name} />
       <div className="overlay">
         <p>{text}</p>
         <a href={link} target="_blank" rel="noreferrer">
