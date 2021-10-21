@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Figure from "./Figure";
 // import { projects } from "../utils/figureList";
 import axios from "axios";
+import Spinner from "./Spinner";
 
 export const query = `
          {
@@ -55,7 +56,7 @@ const Projects: React.FC = () => {
       <h1>My Recent Work</h1>
       <p>Here are a few project I've worked on recently.</p>
       <div className="container">
-        {loading && <h1>loading...</h1>}
+        {loading && <Spinner />}
         {projects.map((item, index) => {
           return <Figure key={index} {...item} />;
         })}
