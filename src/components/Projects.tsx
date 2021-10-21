@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Figure from "./Figure";
-// import { projects } from "../utils/figureList";
 import axios from "axios";
 import Spinner from "./Spinner";
+import Error from "./Error";
 
 export const query = `
          {
@@ -60,7 +60,11 @@ const Projects: React.FC = () => {
         {projects.map((item, index) => {
           return <Figure key={index} {...item} />;
         })}
-        {error.length > 1 && <h2>{error}</h2>}
+        {error.length > 1 && (
+          <Error>
+            <h2>{error}</h2>
+          </Error>
+        )}
       </div>
     </Wrapper>
   );
