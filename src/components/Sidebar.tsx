@@ -8,7 +8,7 @@ const Sidebar = () => {
       {additionals.map(({ id, text, url, active }) => {
         if (active === false) {
           return (
-            <li key={id} className="notActive">
+            <li key={id} className="notActive" title="Currently not available">
               {text}
             </li>
           );
