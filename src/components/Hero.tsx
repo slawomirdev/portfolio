@@ -31,7 +31,8 @@ const Hero: React.FC = () => {
           <p>
             I'm a student and developer from Poland. I have profound interest in
             frontend development, computer science and everything in between.
-            <Link to="/about"> Read more</Link>
+            Read more on
+            <Link to="/about"> about page</Link>.
           </p>
           <EmailMe />
         </Intro>
