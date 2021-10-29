@@ -3,9 +3,9 @@ import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import GlobalStyle from "./globalstyles";
 import Home from "./sites/Home";
-import Error from "./sites/Error";
 import Spinner from "./components/Spinner";
 
+const Error = lazy(() => import("./sites/Error"));
 const About = lazy(() => import("./sites/About"));
 const Work = lazy(() => import("./sites/Work"));
 
