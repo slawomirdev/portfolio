@@ -1,5 +1,5 @@
 {
-  "short_name": "Slawomir App",
+  "short_name": "Slawomir Portfolio",
   "name": "Slawomir Mendyka Portfolio website",
   "icons": [
     {
@@ -8,12 +8,27 @@
       "type": "image/x-icon"
     },
     {
-      "src": "favicon.ico",
+      "src": "apple-touch-icon.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
       "src": "favicon.ico",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "android-chrome-384x384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

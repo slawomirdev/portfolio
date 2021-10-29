@@ -63,8 +63,8 @@ const GlobalStyle = createGlobalStyle`
 }
 
     .notActive {
-      color: grey;
-      cursor: default;
+      color: black;
+      cursor: help;
     }
 
 

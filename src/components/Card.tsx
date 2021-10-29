@@ -66,6 +66,11 @@ const CardWrapper = styled(motion.div)`
     align-items: center;
     justify-content: center;
     padding-top: 3rem;
+
+    img {
+      height: 26rem;
+      width: 26rem;
+    }
   }
 
   .list {

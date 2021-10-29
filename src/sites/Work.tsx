@@ -2,14 +2,13 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import styled from "styled-components";
 import Projects from "../components/Projects";
-// import Sidebar from "../components/Sidebar";
+
 
 const Work: React.FC = () => {
   return (
     <Wrapper>
       <Navbar />
       <Projects />
-      {/* <Sidebar /> */}
     </Wrapper>
   );
 };
