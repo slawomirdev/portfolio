@@ -44,7 +44,6 @@ const Description: React.FC = () => {
 const Wrapper = styled.div`
   height: 12rem;
   width: 15rem;
-  /* background: red; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,7 +56,6 @@ const Box = styled.div`
   width: 10rem;
   box-shadow: 0 10px 20px -10px rgb(50 50 93 / 40%), 0 2px 3px rgb(0 0 0 / 4%),
     0 0 1px rgb(0 0 0 / 15%);
-  /* padding: 1rem; */
   background: #fff;
   border-radius: 2rem;
   display: flex;
@@ -73,6 +71,10 @@ const Box = styled.div`
     top: 80%;
     cursor: pointer;
     color: black;
+  }
+
+  svg:hover {
+    color: grey;
   }
 `;
 
