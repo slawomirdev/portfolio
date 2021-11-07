@@ -1,10 +1,9 @@
  # Portfolio website
 
-> This a personal website
-
 ## Built With
 
 - React
+- Typescript
 - ReactRouter
 - DatoCMS
 - Styled Components
